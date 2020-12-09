@@ -16,7 +16,6 @@ class Ball:
                                      self.y - self.R,
                                      self.x + self.R,
                                      self.y + self.R, fill = "green")
-
     def move(self):
         self.x += self.dx
         self.y += self.dy
@@ -46,7 +45,6 @@ def main():
     canvas.bind('<Button-1>', canvas_click_handler)
     ball = Ball()
     tick()
-
     root.mainloop()
 
 if __name__ == "__main__":
